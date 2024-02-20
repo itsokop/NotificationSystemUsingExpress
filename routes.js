@@ -45,7 +45,7 @@ router.post('/user', async(req, res) => {
 router.put('/user/:id', async(req, res) => {
     const user = req.body
     const { id } = req.params
-    user.id = parseInt(id)
+    user.id = (id)
 
     const { success, data } = await createOrUpdate(user)
 

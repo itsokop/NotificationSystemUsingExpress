@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use(express.json())
 
 app.get("/", (req, res)=>{
-    res.json({"Hi":"Hello World"})
+    res.json({"Hi":"You're awesome"})
 })
 
 app.use('/api', user)
