@@ -51,7 +51,7 @@ router.put('/user/:id', async(req, res) => {
         return res.json({success, data})
     }
 
-    return res.status(500).json({success: true, message: "Error aana chaiye bcz id doesn't exist!"})
+    return res.status(500).json({success: true, message: "Id not found"})
 })
 
 

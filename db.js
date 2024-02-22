@@ -84,7 +84,7 @@ const deleteUserById = async (value, key = 'id') => {
             return { success: false, message: 'Error finding user' };
         }
         if (!existingUser.data.id) {
-            return { success: true, message: 'User not found' };
+            return { success: true, message: 'Id not found' };
         }
 
         // Attempt to delete the user
